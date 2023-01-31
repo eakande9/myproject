@@ -2,6 +2,8 @@ import {
     faker
 } from '@faker-js/faker'
 
+let selectVegetable = ['Brocolli', 'Cucumber', 'Beetroot', 'Cauliflower']
+
 
 class generateData {
 
@@ -10,6 +12,8 @@ class generateData {
         const mynumber = parseInt(num)
         return mynumber
     }
+
+
 
 
 }

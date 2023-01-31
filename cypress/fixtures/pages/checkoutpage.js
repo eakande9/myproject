@@ -3,7 +3,7 @@ import helper from '../../fixtures/helper';
 
 // Selectors
 const placeOrder = ':nth-child(14)'
-const nameAndWeight = '.product-name'
+const nameAndWeight = 'p.product-name'
 const quantity = 'p.quantity'
 const price = ':nth-child(4) > .amount'
 const total = ':nth-child(5) > .amount'

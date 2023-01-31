@@ -1,4 +1,7 @@
 class helper {
+    vegetables() {
+
+    }
     clickMultipleTimes(number, button) {
         for (var i = 0; i < number; i++) {
             cy.get(button).click()
