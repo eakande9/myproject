@@ -1,0 +1,14 @@
+name: MYCI WORKFLOW
+on:
+  repository_dispatch:
+  push:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+  steps:
+  - name: Check out code
+    uses: actions/checkout@v2
+  - name: use Node 14
+    uses: actions/setup=node@v1
+  - name: run cypress
+    run: node_modules/.bin/cypress

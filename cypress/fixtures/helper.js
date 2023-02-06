@@ -1,7 +1,6 @@
-class helper {
-    vegetables() {
+import homepage from "./pages/homepage";
 
-    }
+class helper {
     clickMultipleTimes(number, button) {
         for (var i = 0; i < number; i++) {
             cy.get(button).click()
@@ -28,6 +27,7 @@ class helper {
     }
 
     typeText(element, text) {
+        cy.get(element).clear()
         cy.get(element).type(text)
     }
 

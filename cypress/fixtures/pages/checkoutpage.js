@@ -38,6 +38,17 @@ class checkoutpage {
     }
 
     //page methods
+    checkoutMultipleProducts(vegetables, number, button) {
+        const product = vegetables //['Brocolli', 'Cucumber', 'Beetroot', 'Cauliflower'];
+        product.forEach(function (product) {
+            homepage.enterSearchWord(product)
+            helper.waitForTimeout(3000)
+            helper.clickMultipleTimes(number, button)
+            helper.clickElement(homepage.addButton())
+        })
+        helper.clickElement(homepage.proceedCheckout());
+        homepage.clickProceedToCheckoutBtn()
+    }
     clickCheckout(product, number, button) {
         //use the search bar
         homepage.enterSearchWord(product)
