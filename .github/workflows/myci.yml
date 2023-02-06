@@ -3,7 +3,7 @@ on:
   repository_dispatch:
   push:
     branch: 
-      - validatepayment
+      - main
 jobs:
   test:
     runs-on: ubuntu-latest
