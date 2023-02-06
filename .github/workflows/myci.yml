@@ -10,6 +10,7 @@ jobs:
   steps:
   - name: Check out code
     uses: actions/checkout@v2
+  - run: npm install
   - name: use Node 14
     uses: actions/setup=node@v1
   - name: run cypress
